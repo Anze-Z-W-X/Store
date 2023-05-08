@@ -156,6 +156,8 @@
 							alert("登录成功");
 
 							location.href="index.html";
+							//将服务器返回头像设置到cookie中
+							$.cookie("avatar",json.data.avatar,{expires: 7})
 						}else {
 							alert("登录失败");
 						}
